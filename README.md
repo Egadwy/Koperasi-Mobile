@@ -1,5 +1,5 @@
 > Koperasi-Mobile
 
-> ADMIN = user: admin, pass: admingik123
+> ADMIN = user: admin, pass: admingik121
 
 > USER  = user & pass: nik
