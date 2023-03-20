@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Koperasi Mobile</string>
+    <string name="error">THIS APP REQUIRE\nGLOBALINDO WIFI CONNECTION</string>
+</resources>
