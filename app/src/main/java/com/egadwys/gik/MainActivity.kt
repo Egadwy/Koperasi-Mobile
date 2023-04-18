@@ -1,7 +1,6 @@
 package com.egadwys.gik
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
@@ -25,9 +24,7 @@ class MainActivity : AppCompatActivity() {
         linearLayout = findViewById(R.id.error)
         linearLayout.visibility = View.GONE
         webview.visibility = View.VISIBLE
-        webview.loadUrl("http://192.168.10.3/GIK")
-//        local
-//        webview.loadUrl("http://192.168.137.1/GIK")
+        webview.loadUrl("https://gik.globalindointimates.id")
         webview.settings.javaScriptEnabled = true
 
         webview.webViewClient = object : WebViewClient() {
@@ -44,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
                 webview.visibility = View.GONE
                 linearLayout.visibility = View.VISIBLE
-                Toast.makeText(this@MainActivity, "connect to GLOBALINDO wifi to use this app",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity, "check your internet connection",Toast.LENGTH_LONG).show()
             }
         }
 
@@ -54,6 +51,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (webview.canGoBack()){
             webview.goBack()
