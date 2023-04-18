@@ -5,7 +5,8 @@
       - user: admin
       - pass: admingik121
    - USER
-      - user & pass: nik
+      - user: nik
+      - pass (default, can be changed): nik
 
 ![Login_page](/preview/login.png)
 ![Dashboard_page](/preview/dashboard.png)
